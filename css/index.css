@@ -88,7 +88,7 @@ h1, h2, h3, h4, h5 {
 	flex-wrap: nowrap;
 	width: 100%;
 	margin-top: 50px;
-	margin-left: 80px;
+	margin-left: 90px;
  }
 .navmenu a {
 	align-items: center;
@@ -97,7 +97,10 @@ h1, h2, h3, h4, h5 {
  }
 /* slogan needs to be recentered above breakline and below navMenu */
 .navMenu .tagline #slogan {
-	display: inline-flex;
+  display: flex;
+  margin-left: 300px;
+  margin-bottom: :50px;
+
  }
 
 
@@ -110,11 +113,26 @@ h1, h2, h3, h4, h5 {
   align-items: center;
 
  }
- .tagline .sign {
-     overflow: hidden;
+ .sign {
+
      display: none;
   }
 }
+
+/* Mobile view here @ 500px */
+/* @media (max-width: 500px) {
+.navMenu  {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid red;
+ }
+
+
+} */
+
+
+
+
 
 .navMenu a {
 	margin: 0 10px;
@@ -170,11 +188,11 @@ color: aqua;
 }
 
 .tagline .img {
-	display: flex;
-  margin-left: center;
-  margin-right: center;
-  width: 50%;
-	position:fixed;
+
+  /* margin-left: center;
+  margin-right: center; */
+  /* width: 50%;
+	position:fixed; */
 }
 .sign {
 	display: flex;
@@ -245,9 +263,59 @@ margin-left: 30px;
 .footer {
 	margin:auto;
 	width:100%;
-	dispay:flex;
+
 	flex-direction: row;
 	flex-flow: wrap;
 	font-size: 20px;
-	margin-left: 450px;
+
 }
+/* Tablet view @ 800px here */
+@media (max-width: 800px) {
+ /* navMenu needs to drop below logo */
+.navMenu {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	width: 100%;
+	margin-top: 50px;
+	margin-left: 90px;
+ }
+.navmenu a {
+	align-items: center;
+	width: 50%;
+	justify-content: space-between;
+ }
+/* slogan needs to be recentered above breakline and below navMenu */
+.navMenu .tagline #slogan {
+  display: flex;
+  margin-left: 300px;
+  margin-bottom: :50px;
+
+ }
+
+
+ /* Great Idea logo needs to be centered above navMenu */
+ .navMenu .logo {
+	display: flex;
+	margin-left: 20px;
+	margin-right: 200px;
+	justify-content: center;
+  align-items: center;
+
+ }
+ .sign {
+
+     display: none;
+  }
+}
+
+/* Mobile view here @ 500px */
+/* @media (max-width: 500px) {
+.navMenu  {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid red;
+ }
+
+
+} */
