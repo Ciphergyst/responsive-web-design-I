@@ -231,33 +231,32 @@ margin-left: 30px;
 /* Tablet view @ 800px here */
 @media (max-width: 800px) {
  /* navMenu needs to drop below logo */
-.navMenu {
+ .navMenu {
 	display: flex;
 	flex-direction: column;
-	flex-wrap: nowrap;
-	width: 100%;
-	margin-top: 50px;
-	margin-left: 90px;
+  width: 100%;
+  margin-top: 50px;
+
  }
-.navmenu a {
+ .navmenu a {
 	align-items: center;
+  margin-left: 100px;
 	width: 50%;
 	justify-content: space-between;
  }
 /* slogan needs to be recentered above breakline and below navMenu */
  #slogan {
-  display: flex;
-  margin-left: 200px;
-  margin-bottom: :1000px;
-  top: 0;
+
 
  }
 
 
  /* Great Idea logo needs to be centered above navMenu */
  .navMenu .logo {
+  width: 180px;
+  height: 40px;
 	display: flex;
-	margin-left: 20px;
+	margin-left: 90px;
 	margin-right: 200px;
 	justify-content: center;
   align-items: center;
@@ -288,13 +287,41 @@ margin-left: 30px;
 }
 
 
-/* Mobile view here @ 500px */ */
+/* Mobile view here @ 500px */
 @media (max-width: 500px) {
-.navMenu  {
-  display: flex;
-  flex-direction: column;
-  border: 1px solid red;
- }
+ .navMenu .logo {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+
+
+  }
+ .navMenu a {
+   flex-direction: column;
+   align-items: center;
+   margin-top: 0px;
+   width: 100%;
+   border: 1px solid gray;
+  }
+  #slogan {
+  display: inline-flex;
+  position:absolute;
+  width: 75px;
+  margin-left: 60px;
+
+  margin-bottom: 1000px;
+
+  }
+
+ .button {
+  display:flex;
+  padding: 10px;
+  margin-top: 500px;
+}
+
+
+
+
 
 
 }
