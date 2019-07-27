@@ -73,9 +73,10 @@ h1, h2, h3, h4, h5 {
 
 .sign {
   width: 50px
-	top: 10px;
+	top: 20px;
+  margin-top: 15px;
 	margin-right: 70px;
-	margin-bottom: 90px;
+	margin-bottom: 80px;
   margin-left: 600px;
   /* border: 1px solid red; */
 
@@ -91,7 +92,6 @@ h1, h2, h3, h4, h5 {
   border-radius: 20px;
   color: gray;
   text-decoration: none;
-  margin-bottom: 10px;
   font-size: 20px;
 
 }
@@ -117,7 +117,9 @@ h1, h2, h3, h4, h5 {
 }
 .button {
 	background-color: white;
-  border-bottom: : 1px solid black;
+  border-bottom: 1px solid black;
+  border-left: 1px solid black;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
   color: black;
   padding: 7px 39px;
   text-align: center;
@@ -242,12 +244,12 @@ margin-left: 30px;
  .navmenu a {
 	align-items: center;
   margin-left: 100px;
-	width: 50%;
+	width: 100%;
 	justify-content: space-between;
  }
 /* slogan needs to be recentered above breakline and below navMenu */
  #slogan {
-
+margin-left: 100px;
 
  }
 
@@ -257,8 +259,8 @@ margin-left: 30px;
   width: 180px;
   height: 40px;
 	display: flex;
-	margin-left: 90px;
-	margin-right: 200px;
+	margin-left: 80px;
+	margin-right: 140px;
 	justify-content: center;
   align-items: center;
 
@@ -278,8 +280,9 @@ margin-left: 30px;
 
  }
  .button {
-   top: 20px;
-   left: 300px;
+   top: 130px;
+   left: 200px;
+   border-bottom: : 1px solid black;
  }
  .textBody1 {
    margin-top: 10px;
@@ -300,7 +303,6 @@ margin-left: 30px;
  .navMenu a {
    flex-direction: column;
    align-items: center;
-   margin-top: 0px;
    width: 100%;
    border: 1px solid gray;
   }
@@ -311,18 +313,22 @@ margin-left: 30px;
   margin-left: 60px;
   margin-top: 15px;
 
-  /* margin-bottom: 1000px; */
+
 
   }
 
- .button {
- margin-left: 1px;
- margin-top: 500px;
- margin-right: 0px;
- padding: 8 12;
+.button {
+ display: flex;
+ flex-flow:nowrap;
+ justify-content: center;
+ align-items: center;
+ border-bottom: 1px solid black;
+ border-left: 1px solid gray;
+ box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 
 
 
-}
+
  }
+
 }
